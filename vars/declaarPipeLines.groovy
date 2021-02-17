@@ -3,16 +3,18 @@
  }
 
  pipeline {
-  agent { any
+  agent any
          stages {
      stage('Demo') {
+      steps {
      echo 'Hello world'
+      }
      sayHello 'Dave'
  }
         }
 
  }
- }
+ 
 
 
 
