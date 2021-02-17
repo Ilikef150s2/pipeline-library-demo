@@ -41,4 +41,24 @@ Hello, Dave.
 [Pipeline] End of Pipeline
 Finished: SUCCESS
 ```
+#### Summary (TL;DR)
+That’s it for my intro to Shared Libraries in Jenkins! As you can see they’re a useful way to share common code that you might use across different Jenkinsfiles.
+
+Here are the important things to remember:
+
+- [ ] You need to use Groovy to write your custom functions or steps  
+_To write pipeline steps that you can call from your pipelines (e.g. deployApplication, readConfigFile, etc.):_
+
+- [ ] Create a file in the vars/ directory in your repository, with the name of your custom step
+
+- [ ] The file should implement the def call() method; you can also define parameters to your step
+
+##### To write other common Groovy code, add it into src/
+
+- [ ] Add your Shared Library in Jenkins using the Configure System screen
+Thanks for reading! I hope you’ve found this example Jenkins pipeline library useful.
+
+How are you using Jenkins pipelines? Any feedback please create an issue and I will address after workon this article? You’re very welcome to post your thoughts in the comments section below.
+
+
 
