@@ -51,7 +51,7 @@ _To write pipeline steps that you can call from your pipelines (e.g. deployAppli
 
 - [ ] Create a file in the vars/ directory in your repository, with the name of your custom step
 
-- [ ] The file should implement the def call() method; you can also define parameters to your step
+- [ ] The file should implement the [def call()](https://github.com/Ilikef150s2/pipeline-library-demo/blob/58ed215b82c2b1070927316973e21ba4d7330a85/vars/sayHello.groovy#L3) method; you can also define parameters to your step
 
 ##### To write other common Groovy code, add it into src/
 
